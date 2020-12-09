@@ -1,0 +1,172 @@
+body {
+    position: absolute;
+	max-width: 1152px;
+	margin:0 auto;
+	padding-left: 10%;
+	margin-right: 100px;
+    position: relative;
+	font-family: Hind, sans-serif;
+}
+
+header {
+    position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	display: grid;   
+	font-size: 14px;
+	padding: 10px 0 0;
+}
+
+header .logotype {
+	width: 190px; 
+	height: 100px;
+}
+
+nav ul {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.logo img{
+	margin: -25px 0 0;
+}
+
+li {
+	list-style: none;
+	
+}
+
+li a{
+	text-decoration: none;
+	color: black;
+}
+
+#taskone {
+	position: absolute;
+	margin-right: 100px;
+    
+}
+
+#taskone h2 {
+    position: relative;
+    text-shadow: rgba(36, 113, 163, 0.5) 2px 5px;
+	font-size: 25px;
+}
+
+#taskone h4 {
+    position: relative;
+    margin-top: 10px;
+}
+
+#taskone button {
+    position: relative;
+}
+
+#taskone p {
+    position: relative;
+}
+
+#taskone img {
+	position: relative;
+	margin-top: -250px;
+	margin-left: 700px;
+}
+
+
+#tasktwo {
+	position: absolute;
+	margin-top: 400px;
+}
+
+#tasktwo p {
+    position: relative;
+}
+
+#taskthree {
+	position: relative;
+	margin-top: 850px;
+}
+
+#taskthree img {
+	position: relative;
+	margin-left: 700px;
+	margin-top: -200px;
+	
+}
+
+pre {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#taskfive {
+	position: relative;
+}
+
+#taskfive img {
+	position: relative;
+	margin-left: 600px;
+	margin-top: -300px;
+}
+
+#taskfivef {
+	position: relative;
+}
+
+#taskfivef img {
+	position: relative;
+	margin-left: 750px;
+	margin-top: -180px;
+	width: 300px;
+	height: 200px;
+}
+
+#tasksix, #taskseven, #taskeight, #tasknine, #taskten, #taskeleven {
+	position: relative;
+}
+
+#taskeight img {
+	position: relative;
+	margin-left: 700px;
+	margin-top: -400px;
+}
+
+#taskeleven img {
+	position: relative;
+	margin-left: 650px;
+	margin-top: -250px;
+}
+
+footer  {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+footer li {
+	font-size: 17px;
+	padding: 10px;
+	text-decoration: underline;
+	margin-left: 30px;
+}
+
+#bottom-element {
+	text-align: right;
+	text-decoration: none;
+}
+li {
+	list-style: none;
+	
+}
+
+li a{
+	text-decoration: none;
+	color: black;
+}
+
+
+a:visited {
+    color: black; 
+} 
+
+a:hover {
+    color: gray; 
+}
