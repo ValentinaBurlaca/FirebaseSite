@@ -1,89 +1,203 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.1.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.1.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.1.2/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>HOME</title>
+	<link rel="stylesheet" type="text/css" href="assets/index.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<a href="file:///D:/git/MySite/public/index.html" class="logo"><img class="main-logo" src="img/logo.png"  alt="logo"></a>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">HOME</a>
+					</li>
+					<li>
+						<a href="file:///D:/git/MySite/public/theory.html">THEORY</a>
+					</li>
+					<li>
+						<a href="file:///D:/git/MySite/public/tasks.html">TASKS</a>
+					</li>
+					<li>
+						<a href="file:///D:/git/MySite/public/video.html">VIDEO</a>
+					</li>
+					<li>
+						<a href="contacts.html">CONTACTS</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+			<aside class="block-left">
+			</aside>
+			<aside class="block-right">
+			</aside>
+			<div class="section">
+				<div class="main-container">
+					<img src="img/0.jpg" alt="img" class="image">
+					<div class="middle">
+						<div class="text">
+							<a href="theory.html"><span>Let's start!</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="article">
+				<div class="article-container">
+					<div class="left">
+						<h4><strong>Contact us</strong></h4>
+						<p>
+							You have a possibility to <br/>contact with us due to category <br/> “Contacts” or just <br/>qlick <a href="contacts.html"><span>here</span></a>.
+						</p>
+					</div>
+					<div class="center">
+						<h4><strong>About us</strong></h4>
+							<p>If you want to study English, highly qualified <br/>teachers from our team will help you to achieve the success!
+							</p>
+					</div>
+					<div class="right">
+						<h4><strong>Intesting</strong></h4>
+							<p>“I am” is the shortest complete sentence <br/> in the English language.
+							</p>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="content">
+				<h3>The advantages of studying English</h3>
+					<ul>
+					<li>
+						As a universal language, English gives very much contributions and benefits to the communication.
+					</li>
+					<li>
+						Statistic : There are over 750 million people who speak English as a foreign language and in the year 2000 the British Council said that there were about a billion people learning English.There are so many benefits of learning English and they can be found in many sides such as in international business community, technology field, education, and in the social life.
+					</li>
+					<li>
+						English takes a large part in the growth of technology. 
+					</li>
+					<li>
+						Almost every electronic devices use English. In the internet, there is a lot of information written in English.
+					</li>
+					<li>
+						In education, the international student should have capability to speak, read, and write in English.
+						By understanding English will be widening the knowledge.
+					</li>
+					<li>
+						Understanding English mean easier to make a friend.
+					</li>
+					<li>
+						It helps tourists when they visit another country.
+					</li>
+					<li>
+						So, this website is created in order to help people to learn this wonderful language, to understand the grammar, to  be able to communicate with native speakers and so on.
+					</li>
+				</ul>
+			</div>
+			<hr>
+			<div class="content-container">
+				<h2>Our teachers</h2>
+				<div class="content-img" style="width: 30%">
+					<img src="img/f.jpg" alt="img" style="width: 100%; height: 190px;">
+					<div class="content-img-center">
+						<p>Ann Ribac <br/>
+							ribacann@gmail.com
+						</p>
+					</div>
+				</div>
+				<div class="content-img" style="width: 30%">
+					<img src="img/s.jpg" alt="img" style="width: 100%; height: 190px;">
+					<div class="content-img-center">
+						<p>Alice Gonchar
+						<br/>
+							aligon@mail.ru 
+						</p>
+					</div>
+				</div>
+				<div class="content-img" style="width: 30%">
+					<img src="img/t.jpg" alt="img" style="width: 100%; height: 190px;">
+					<div class="content-img-center">
+						<p>Mary Cotovei
+						<br/>
+							cotoveimar@gmail.com
+						</p>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="bottom-article-container">
+				<div>
+					👩‍💼 Самостоятельно или с репетитором.
+					Учите английский с нуля онлайн самостоятельно. 
+					Попробуйте Метод Тичера — самоучитель английского.
+				</div>
+				<div>
+					👩‍💼 Самостоятельно или с 
+					репетитором
+					Учите английский с нуля онлайн самостоятельно. 
+					попробуйте Метод Тичера — самоучитель английского.
+				</div>
+				<div>
+					📗📙📕 Любой уровень: от 
+					нуля до продвинутого.
+					Не знаете даже алфавит — учите английский с нуля,
+					проходя по порядку уроки для начинающих. 
+				</div>
+				<div>
+					👨‍🏫👩‍🏫 Авторский контент на разные темы
+					Преподаватели EngLe-ng регулярно пополняют
+					контент уроками английского языка онлайн на разные темы:
+					
+				</div>
+				<div>
+					❤️ На EngLe-ng возможно изучение английского языка онлайн бесплатно.
+					Спустя месяц дистанционного обучения вы удивитесь прогрессу.
+				</div>
+				<div>
+					📈 Возможность отследить прогресс
+					Пройдите тест на определение уровня английского и 
+					размера словарного запаса, начните заниматься уже сейчас.
+				</div>
+			</div>
+			<hr>
+			<div class="footer">
+				<div class="footer-container">	
+					<ul class="left-footer">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="file:///D:/git/MySite/public/video.html">Video</a>
+						</li>
+						<li>
+							<a href="file:///D:/git/MySite/public/contacts.html">Contacts</a>
+						</li>
+					</ul>	
+					<ul class="center-footer">
+						<li>
+							<a href="#">Facebook</a>
+						</li>
+						<li>
+							<a href="#">Instagram</a>
+						</li>
+						<li>
+							<a href="#">YouTube</a>
+						</li>
+					</ul>	
+					<ul class="right-footer">
+						<li>
+							<a href="#">Privacy</a>
+						</li>
+						<li>
+							
+						</li>
+						<li id="footer">
+							<br/>
+								©EngLe-Ng 
+						</li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
