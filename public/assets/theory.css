@@ -35,9 +35,8 @@ content {
 	grid-area: content;;
 }
 
-.footer {
+footer {
 	grid-area: footer;
-	position: fixed;
 }
 
 .logo {
@@ -142,23 +141,10 @@ li {
 }
 
 .footer-container {
+	position: relative;
 	display: grid;
-	grid-template-areas: 
-	'left-footer center-footer right-footer';
-	grid-template-rows: 100px;
-	grid-template-columns: auto auto auto;
-}
-
-.left-footer {
-	grid-area: left-footer;
-}
-
-.center-footer {
-	grid-area: center-footer;
-}
-
-.right-footer {
-	grid-area: right-footer;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: -600px;
 }
 
 .footer-container li {
@@ -185,9 +171,9 @@ hr {
 		position: relative;
 	}
 
-	footer {
+	.footer-container {
 		position: relative;
-		margin-top: 120%;
+		margin-top: -200px;
 	}
 
 	#content p {
@@ -208,3 +194,20 @@ hr {
 	}
 }
 
+@media screen and (min-width: 530px) {
+	nav ul{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		margin-left: -350px;
+	}
+
+	#content p {
+		font-size: 30px;
+		position: relative;
+	}
+
+	footer {
+		position: relative;
+		margin-top: 75%;
+	}
+}
