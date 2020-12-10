@@ -10,7 +10,6 @@ body {
 	grid-column-gap: 5px;
 	grid-row-gap: 20px;
 	width: 100%;
-	overflow: hidden;
 }
 
 header {
@@ -167,35 +166,45 @@ li {
 	font-family: Hind, sans-serif;
 	text-align: left;
 	font-size: 20px;
-	padding: 10px;
+	margin-bottom: 10%;
 }
 
 hr {
 	width: 600px;
 }
 
-@media screen and (max-width: 1192px) {
-	nav li {
+@media screen and (max-width: 1195px) {
+	nav ul{
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		margin-left: 400px;
+		grid-template-columns: repeat(5, 1fr);
+		margin-left: -350px;
+	}
+
+	#content p {
+		font-size: 20px;
+		position: relative;
+	}
+
+	footer {
+		position: relative;
+		margin-top: 120%;
+	}
+
+	#content p {
+		font-size: 50px;
+		padding-left: 8%;
+	}	
+
+	#content a {
+		position: relative;
+		font-size: 40px;
+		padding-left: 8%;
+	}
+
+	.section-container img {
+		width: 70%;
+		height: 100%;
+		margin-left: 20%;
 	}
 }
 
-@media screen and (max-width: 1244px) {
-	body {
-		
-		width: 100%;
-}
-
-@media screen and (max-width: 1194px) {
-	body {
-		
-		width: 100%;
-}
-
-@media screen and (max-width: 849px) {
-	.footer-container {
-		margin-top: 500px;
-	}
-}
