@@ -91,6 +91,12 @@ h2 {
 	background-color: #ffffff;
 	color: black;
 }
+
+.flip-box-front img {
+	width: 100%; 
+	height: 190px;
+}
+
 .flip-box-back {
 	background-color: dodgerblue;
 	color: white;
