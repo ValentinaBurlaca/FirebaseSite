@@ -5,17 +5,19 @@ body {
 	'section-container section-container section-container'
 	'block-left content block-right'
 	'block-left footer block-right';
-	grid-template-rows: 70px auto 615px 100px;
+	grid-template-rows: 70px auto 615px auto;
 	grid-template-columns: 100px auto 100px;
 	grid-column-gap: 5px;
 	grid-row-gap: 20px;
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 header {
 	grid-area: header;
 	font-family: Hind, sans-serif;
-	padding: 20px  ;
+	padding: 20px;
 	font-size: 14px;
 }
 
@@ -32,11 +34,12 @@ header {
 }
 
 content {
-	grid-area: content;;
+	grid-area: content;
 }
 
 footer {
 	grid-area: footer;
+	position: relative;
 }
 
 .logo {
@@ -64,7 +67,6 @@ nav ul {
 }
 
 nav li {
-	display: inline-block;
 	padding: 10px;
 }
 
@@ -141,10 +143,10 @@ li {
 }
 
 .footer-container {
-	position: relative;
+	position: absolute;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	margin-top: -600px;
+	margin-top: -850px;
 }
 
 .footer-container li {
@@ -159,7 +161,7 @@ hr {
 	width: 600px;
 }
 
-@media screen and (max-width: 1195px) {
+@media screen and (max-width: 1250px) {
 	nav ul{
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
@@ -173,7 +175,7 @@ hr {
 
 	.footer-container {
 		position: relative;
-		margin-top: -200px;
+		margin-top: -180px;
 	}
 
 	#content p {
@@ -194,7 +196,21 @@ hr {
 	}
 }
 
-@media screen and (min-width: 530px) {
+@media screen and (max-width: 1140px){
+	.footer-container {
+		position: relative;
+		margin-top: -50px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	footer {
+		position: relative;
+		margin-top: 50%;
+	}
+}
+
+@media screen and (min-width: 545px) {
 	nav ul{
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
@@ -208,6 +224,20 @@ hr {
 
 	footer {
 		position: relative;
-		margin-top: 75%;
+		margin-top: 80%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	footer {
+		position: relative;
+		margin-top: 50%;
+	}
+}
+
+@media screen and (min-width: 646px) {
+	footer {
+		position: relative;
+		margin-top: 90%;
 	}
 }
