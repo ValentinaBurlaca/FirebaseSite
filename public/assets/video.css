@@ -3,7 +3,6 @@ body {
 	padding-left: 10%;
 	padding-right: 10%;
 	font-family: Hind, sans-serif;
-	
 }
 
 .logotype {
@@ -19,6 +18,7 @@ header {
 	padding: 10px 0 0;
 	font-size: 14px;
 }
+
 
 nav ul {
 	display: grid;
@@ -62,28 +62,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-#third {
-    margin-left: -50px;
-}
-#second {
-    margin-left: -50px;
-    margin-top: 300px;
-}
 
-#fourth {
-    margin-top: 50px;
-    margin-left: 80px;
-}
-
-#fiveth {
-    margin-top: 150px;
-    margin-left: 160px;
-}
-
-#sixth {
-    margin-left: -20px;
-    margin-top: -160px;
-}
 
 footer  {
 	display: grid;
@@ -122,4 +101,14 @@ a:hover {
 
 hr {
 	width: 800px;
+}
+
+@media screen and (max-width: 910px) {
+	nav ul{
+		display: none;
+	}
+
+	section a {
+		
+	}
 }

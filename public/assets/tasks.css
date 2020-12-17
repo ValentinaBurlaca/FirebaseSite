@@ -1,11 +1,15 @@
 body {
-    position: absolute;
+    position: relative;
 	max-width: 1152px;
 	margin:0 auto;
 	padding-left: 10%;
 	margin-right: 100px;
     position: relative;
 	font-family: Hind, sans-serif;
+}
+
+section {
+	position: absolute;
 }
 
 header {
@@ -74,7 +78,7 @@ li a{
 
 
 #tasktwo {
-	position: absolute;
+	position: relative;
 	margin-top: 400px;
 }
 
@@ -84,7 +88,7 @@ li a{
 
 #taskthree {
 	position: relative;
-	margin-top: 850px;
+	
 }
 
 #taskthree img {
@@ -92,6 +96,10 @@ li a{
 	margin-left: 700px;
 	margin-top: -200px;
 	
+}
+
+#taskfour {
+	position: relative;
 }
 
 pre {
@@ -170,3 +178,115 @@ a:visited {
 a:hover {
     color: gray; 
 }
+
+@media screen and (max-width: 1600px) {
+	body {
+		padding-left: 5%;
+		margin-right: 30%;
+	}
+}
+
+@media screen and (max-width: 1560px) {
+	body {
+		padding-left: 5%;
+		margin-right: 30%;
+	}
+}
+
+@media screen and (max-width: 1360px) {
+	body {
+		padding-left: 5%;
+		margin-right: 30%;
+	}
+	#taskthree img {
+		margin-left: 58%;
+	}
+
+	#taskfivef img {
+		margin-left: 50%;
+	}
+
+	#taskeight img {
+		margin-left: 60%;
+	}
+
+	#taskeleven img {
+		position: absolute;
+		margin-top: 15%;
+		margin-left: 50%;
+	}
+
+}
+
+@media screen and (max-width: 1300px) {
+	body {
+		padding-left: 5%;
+		margin-right: 20%;
+	}
+
+	#taskone img {
+		display: none;
+	}
+	#taskthree img {
+		margin-left: 58%;
+	}
+
+	#taskfivef img {
+		display: none;
+	}
+
+	#taskeight img {
+		margin-left: 60%;
+	}
+
+	#taskeleven img {
+		position: absolute;
+		margin-top: 15%;
+		margin-left: 50%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body {
+		padding-left: 5%;
+		margin-right: 20%;
+	}
+	#taskthree img {
+		display: none;
+	}	
+	
+}
+
+@media screen and (max-width: 1000px) {
+	nav ul {
+		display:none;
+	}
+
+	#taskthree{
+		margin-top: 1%;
+	}
+
+	#taskthree img {
+		display: none;
+	}	
+
+	#taskfivef img {
+		display: none;
+	}
+
+	#taskeight img {
+		margin-left: 90%;
+	}
+
+	#taskfive img {
+		margin-left: 98%;
+	}
+
+	#taskeleven img {
+		position: absolute;
+		margin-top: 15%;
+		margin-left: 80%;
+		width: 300px;
+	}
+}
+
